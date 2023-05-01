@@ -16,7 +16,7 @@ public class Select_type extends AppCompatActivity {
         Button ac = findViewById(R.id.button2);
         Button speed = findViewById(R.id.button3);
         Button count = findViewById(R.id.button4);
-
+        Button right = findViewById(R.id.button5);
         ac.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -36,12 +36,12 @@ public class Select_type extends AppCompatActivity {
         count.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Select_type.this, Accuracy.class);
+                Intent intent = new Intent(Select_type.this, Count.class);
                 startActivity(intent);
             }
         });
 
-        ac.setOnClickListener(new View.OnClickListener() {
+        right.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(Select_type.this, Accuracy.class);
